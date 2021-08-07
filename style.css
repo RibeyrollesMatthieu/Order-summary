@@ -26,7 +26,9 @@ body {
   height: 100%;
 }
 
-body {
+body,
+h1,
+p {
   margin: 0;
 }
 
