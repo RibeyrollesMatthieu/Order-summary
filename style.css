@@ -29,6 +29,9 @@
   /* borders */
   --m-border-radius: 10px;
   --l-border-radius: 20px;
+
+  /* media queries */
+  --mobile-size: 30rem;
 }
 
 /* css reset */
@@ -69,10 +72,12 @@ body,
 body {
   padding: 0 var(--m-spacing);
 
-  background: var(--pale-blue);
+  background: var(--pale-blue) url(./images/pattern-background-mobile.svg) no-repeat;
+  background-size: 100% !important;
 }
 
 .order-summary {
+  max-width: var(--mobile-size);
   flex-direction: column;
 
   background: #fff;
@@ -189,4 +194,10 @@ body {
   color: var(--desaturated-blue);
   font-weight: var(--xl-font-weight);
   font-size: .9em;
+}
+
+@media screen and (min-width: 70rem) {  /* because not using scss, cannot call the variable */
+  body {
+    background: var(--pale-blue) url(./images/pattern-background-desktop.svg) no-repeat;
+  }
 }
