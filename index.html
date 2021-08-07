@@ -1,38 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="./style.css">
-  
-  <title>Frontend Mentor | Order summary card</title>
-</head>
-<body>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="./style.css">
+    
+    <title>Frontend Mentor | Order summary card</title>
+  </head>
+  <body>
 
-  <h1 class="order-summary__title">Order Summary</h1>
+    <main class="order-summary">
+      <header class="order-summary__header">
+        <img src="./images/illustration-hero.svg" alt="Dancing man image" class="order-summary__header__image">
+      </header>
 
-  <p class="order-summary__desc">
-    You can now listen to millions of songs, audiobooks, and podcasts on any 
-    device anywhere you like!
-  </p>
+      <div class="order-summary__content">
+        <h1 class="order-summary__content__title">Order Summary</h1>
 
-  <div class="order-summary__billing-options">
-    <div class="order-summary__billing-options__desc">
-      Annual Plan
-      $59.99/year
-    </div>
+        <p class="order-summary__content__desc">
+          You can now listen to millions of songs, audiobooks, and podcasts on any 
+          device anywhere you like!
+        </p>
 
-    <button class="order-summary__billing-options__change-button">Change</button>
-  </div>
+        <div class="order-summary__content__billing-options">
+          <div class="order-summary__content__billing-options__desc">
+            <div>
+              <span class="order-summary__content__billing-options__desc__plan">Annual Plan</span>
+              <span class="order-summary__content__billing-options__desc__price">$59.99/year</span>
+            </div>
+          </div>
 
-  <button class="order-summary__payment-button">Proceed to Payment</button>
-  <button class="order-summary__cancel-button">Cancel Order</button>
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://itsmatthieu.com">Ribeyrolles Matthieu</a>.
-  </div>
-</body>
+          <button class="order-summary__content__billing-options__change-button">Change</button>
+        </div>
+
+        <button class="order-summary__content__payment-button">Proceed to Payment</button>
+        <button class="order-summary__content__cancel-button">Cancel Order</button>
+      </div>
+    </main>
+    
+    <!-- <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://itsmatthieu.com">Ribeyrolles Matthieu</a>.
+    </div> -->
+  </body>
 </html>
