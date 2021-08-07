@@ -201,6 +201,22 @@ body {
   font-size: .9em;
 }
 
+.attribution {
+  width: 100%;
+  text-align: center;
+  color: var(--dark-blue);
+  margin-bottom: .5rem;
+}
+
+.attribution a {
+  color: var(--bright-blue);
+  text-decoration: inherit;
+}
+
+.attribution a:hover {
+  text-decoration: underline;
+}
+
 @media screen and (min-width: 70rem) {  /* because not using scss, cannot call the variable */
   body {
     background: var(--pale-blue) url(./images/pattern-background-desktop.svg) no-repeat;
